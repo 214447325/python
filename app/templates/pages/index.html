@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <!--<link rel="stylesheet" href="css/index/index.css">-->
+    <link rel="stylesheet" href="{% static 'css/index/index.css' %}">
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <!--<div data-role="header">-->
+        <!--<h1>主页</h1>-->
+        <!--<a href="#" class="ui-btn ui-btn-right ui-shadow ui-icon-refresh ui-btn-icon-right">刷新</a>-->
+    <!--</div>-->
+
+    <!--<div class="userInfo">-->
+        <!--<div class="user">-->
+            <!--<button class="ui-btn ui-icon-plus ui-btn-icon-right">用户添加</button>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div data-role="main" class="ui-content" >-->
+        <!--<div data-role="collapsible">-->
+            <!--<h1>点击我 - 我可以折叠!</h1>-->
+            <!--<p>我是可折叠的内容。</p>-->
+        <!--</div>-->
+        <!--<div data-role="collapsible">-->
+            <!--<h1>点击我 - 我可以折叠!</h1>-->
+            <!--<p>我是可折叠的内容。</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div data-role="footer" style="width:100%;position:fixed;bottom: 0;">-->
+        <!--<div data-role="navbar">-->
+            <!--<ul>-->
+                <!--<li><a href="#" data-icon="home">主页</a></li>-->
+                <!--<li><a href="#" data-icon="arrow-r">下一页</a></li>-->
+                <!--<li><a href="#" data-icon="search">搜索</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+
+</body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{% static 'js/index/index.js' %}"></script>
+<!--<script type="text/javascript" src="js/index/index.js"></script>-->
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+</html>

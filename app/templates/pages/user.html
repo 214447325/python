@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="{% static 'css/index/user.css' %}">
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <a href="index.html" class="ui-btn ui-corner-all ui-shadow ui-icon-arrow-l ui-btn-icon-left" data-transition="flip">返回上一页</a>
+        <h1>用户中心</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" >
+        <!--<div class="user_div1">-->
+            <!--<div class="user_div1_button1"><button class="user_div1_login">登录</button></div>-->
+            <!--<div class="user_div1_button2"><button class="user_div1_registe">注册</button></div>-->
+        <!--</div>-->
+        <form method="post" name="userForm">
+            <div class="ui-field-contain">
+                <label for="user">姓名：</label>
+                <input type="text" name="user" id="user" placeholder="请输入姓名">
+                <label for="bday">生日：</label>
+                <input type="date" name="bday" id="bday">
+                <label for="phone">手机号:</label>
+                <input type="text" name="phone" id="phone" placeholder="请输入手机号">
+                <label for="password">密码：</label>
+                <input type="password" name="password" id="password" placeholder="请输入密码">
+            </div>
+            <input type="button" data-inline="true" class="user_form_submit" value="提交">
+            <input type="reset" data-inline="true" value="重置">
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{% static 'js/index/user.js' %}"></script>
+</html>

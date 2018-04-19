@@ -1,0 +1,15 @@
+.footer-index {
+    position: absolute!important;
+    bottom: 0!important;
+}
+
+.userInfo {
+    width: 100%;
+    height: 65px;
+}
+
+.user {
+    width: 200px;
+    height: auto;
+    float: right;
+}
